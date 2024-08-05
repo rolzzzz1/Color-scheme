@@ -42,10 +42,13 @@ footer {
 
 select {
   font-size: 16px;
+  border-color: #d1d5db;
 }
 
 button {
   font-size: 12px;
+  background-color: #fff;
+  border-color: #d1d5db;
 }
 
 .selectMode {
