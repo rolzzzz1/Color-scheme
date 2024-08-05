@@ -37,6 +37,15 @@ footer {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 12px;
+}
+
+select {
+  font-size: 16px;
+}
+
+button {
+  font-size: 12px;
 }
 
 .selectMode {
