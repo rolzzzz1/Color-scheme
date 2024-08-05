@@ -40,6 +40,10 @@ footer {
   font-size: 12px;
 }
 
+input {
+  height: 44.5px;
+}
+
 select {
   font-size: 16px;
   border-color: #d1d5db;
