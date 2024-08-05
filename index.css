@@ -49,6 +49,7 @@ button {
   font-size: 12px;
   background-color: #fff;
   border-color: #d1d5db;
+  border-style: none;
 }
 
 .selectMode {
