@@ -1,35 +1,41 @@
 <html>
-    <head>
-        <link rel="stylesheet" href="index.css">
-    </head>
-    <body>
-        <header>
-            <input type="color" id="colorPicker" class="colorSelect"></input>
-            <select name="modePicker" id="modePicker" class="selectMode"> 
-                <option value="monochrome">Monochrome</option>
-                <option value="monochrome-dark">Monochrome-dark</option>
-                <option value="monochrome-light">Monochrome-light</option>
-                <option value="analogic">Analogic</option>
-                <option value="complement">Complement</option>
-                <option value="analogic-complement">Analogic-complement</option>
-                <option value="triad">Triad</option>
-            </select>
-            <button id="getScheme"> Get color scheme </button>
-        </header>
-        <main>
-            <div class="colorDiv colorSeed" id="colorSeed"></div>
-            <div class="colorDiv color1" id="color1"></div>
-            <div class="colorDiv color2" id="color2"></div>
-            <div class="colorDiv color3" id="color3"></div>
-            <div class="colorDiv color4" id="color4"></div>
-        </main>
-        <footer>
-            <div class="textDiv" id="text1"></div>
-            <div class="textDiv" id="text2"></div>
-            <div class="textDiv" id="text3"></div>
-            <div class="textDiv" id="text4"></div>
-            <div class="textDiv" id="text5"></div>
-        </footer>
-        <script src="index.js"></script>
-    </body>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Source+Sans+3:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <input type="color" id="colorPicker" class="colorSelect" />
+      <select name="modePicker" id="modePicker" class="selectMode">
+        <option value="monochrome">Monochrome</option>
+        <option value="monochrome-dark">Monochrome-dark</option>
+        <option value="monochrome-light">Monochrome-light</option>
+        <option value="analogic">Analogic</option>
+        <option value="complement">Complement</option>
+        <option value="analogic-complement">Analogic-complement</option>
+        <option value="triad">Triad</option>
+      </select>
+      <button id="getScheme">Get color scheme</button>
+    </header>
+    <main>
+      <div class="colorDiv colorSeed" id="colorSeed"></div>
+      <div class="colorDiv color1" id="color1"></div>
+      <div class="colorDiv color2" id="color2"></div>
+      <div class="colorDiv color3" id="color3"></div>
+      <div class="colorDiv color4" id="color4"></div>
+    </main>
+    <footer>
+      <div class="textDiv" id="text1"></div>
+      <div class="textDiv" id="text2"></div>
+      <div class="textDiv" id="text3"></div>
+      <div class="textDiv" id="text4"></div>
+      <div class="textDiv" id="text5"></div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
 </html>
