@@ -34,7 +34,7 @@ getScheme.addEventListener("click", function () {
   //       document.getElementById("text5").textContent = data.colors[4].hex.value;
   //     });
 
-  fetch(`https://www.thecolorapi.com/scheme?hex=aaac2f&mode=monochrome`)
+  fetch(`https://www.thecolorapi.com/scheme?hex=aaac2f&mode=monochrome-dark`)
     .then((response) => response.json())
     .then((data) => console.log(data));
 });
