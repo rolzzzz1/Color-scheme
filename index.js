@@ -21,7 +21,7 @@ getScheme.addEventListener("click", function () {
   console.log(colorHex);
   console.log(mode);
 
-  fetch(`https://www.thecolorapi.com/scheme?hex=${colorHex}&mode=${mode}`)
+  fetch(`https://www.thecolorapi.com/scheme?mode=${mode}&hex=${colorHex}`)
     .then((response) => response.json())
     .then((data) => {
       colorHex = "#" + colorHex;
