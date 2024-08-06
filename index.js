@@ -6,6 +6,7 @@ var mode = "";
 
 colorPicker.addEventListener("change", function () {
   colorHex = colorPicker.value.replace("#", "");
+  console.log(modePicker.value);
 });
 
 modePicker.addEventListener("select", function () {
