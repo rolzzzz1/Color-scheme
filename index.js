@@ -1,9 +1,9 @@
 const colorPicker = document.getElementById("colorPicker");
 const modePicker = document.getElementById("modePicker");
 const getScheme = document.getElementById("getScheme");
-var colorHex = "";
-var mode = colorPicker.value.replace("#", "");
-console.log(mode);
+var colorHex = colorPicker.value.replace("#", "");
+var mode = "";
+console.log(colorHex);
 
 colorPicker.addEventListener("change", function () {
   colorHex = colorPicker.value.replace("#", "");
