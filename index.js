@@ -10,6 +10,7 @@ colorPicker.addEventListener("change", function () {
 
 modePicker.addEventListener("change", function () {
   mode = modePicker.value;
+  console.log(mode);
 });
 
 getScheme.addEventListener("click", function () {
