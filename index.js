@@ -25,7 +25,6 @@ getScheme.addEventListener("click", function () {
   fetch(`https://www.thecolorapi.com/scheme?mode=${mode}&hex=${colorHex}`)
     .then((response) => response.json())
     .then((data) => {
-      colorHex = "#" + colorHex;
       document.getElementById("colorSeed").style.backgroundColor = colorHex;
       document.getElementById("color1").style.backgroundColor =
         data.colors[0].hex.value;
@@ -36,7 +35,7 @@ getScheme.addEventListener("click", function () {
       document.getElementById("color4").style.backgroundColor =
         data.colors[3].hex.value;
 
-      document.getElementById("text1").textContent = colorHex;
+      document.getElementById("text1").textContent = "#" + colorHex;
       document.getElementById("text2").textContent = data.colors[1].hex.value;
       document.getElementById("text3").textContent = data.colors[2].hex.value;
       document.getElementById("text4").textContent = data.colors[3].hex.value;
