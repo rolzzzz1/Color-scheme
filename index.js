@@ -8,7 +8,7 @@ colorPicker.addEventListener("change", function () {
   colorHex = colorPicker.value.replace("#", "");
 });
 
-modePicker.addEventListener("change", function () {
+modePicker.addEventListener("select", function () {
   mode = modePicker.value;
   console.log(mode);
 });
