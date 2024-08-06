@@ -18,6 +18,9 @@ getScheme.addEventListener("click", function () {
   //     `https://www.thecolorapi.com/scheme?hex=${colorHex}&mode=${mode}`
   //   );
 
+  console.log(colorHex);
+  console.log(mode);
+
   fetch(`https://www.thecolorapi.com/scheme?hex=${colorHex}&mode=${mode}`)
     .then((response) => response.json())
     .then((data) => {
