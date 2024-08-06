@@ -3,6 +3,7 @@ const modePicker = document.getElementById("modePicker");
 const getScheme = document.getElementById("getScheme");
 var colorHex = "";
 var mode = colorPicker.value.replace("#", "");
+console.log(mode);
 
 colorPicker.addEventListener("change", function () {
   colorHex = colorPicker.value.replace("#", "");
