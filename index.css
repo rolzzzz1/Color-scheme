@@ -18,12 +18,16 @@ body {
   font-style: normal;
 }
 
-header {
+.headerDiv {
   margin: 20px 0;
   padding: 10px;
   display: flex;
   justify-content: space-around;
   gap: 10px;
+}
+
+.msgDiv {
+  text-align: center;
 }
 
 main {
