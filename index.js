@@ -1,7 +1,7 @@
 const colorPicker = document.getElementById("colorPicker");
 const modePicker = document.getElementById("modePicker");
 const getScheme = document.getElementById("getScheme");
-const msgDiv = document.getElementById("msgDiv");
+const msgDiv = document.getElementsByClassName("msgDiv");
 const main = document.getElementsByTagName("main");
 var colorHex = colorPicker.value.replace("#", "");
 var mode = "";
