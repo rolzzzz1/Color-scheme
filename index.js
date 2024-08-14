@@ -26,8 +26,8 @@ getScheme.addEventListener("click", function () {
   console.log(mode);
 
   if (mode === "") {
-    if (msgDiv.classList.contains("hidden")) {
-      msgDiv.classList.remove("hidden");
+    if (msgDiv[0].classList.contains("hidden")) {
+      msgDiv[0].classList.remove("hidden");
     }
   } else {
     if (!msgDiv.classList.contains("hidden")) {
