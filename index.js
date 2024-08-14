@@ -32,8 +32,8 @@ getScheme.addEventListener("click", function () {
       msgDiv[1].classList.remove("hidden");
     }
 
-    if (!colorDivContainer.classList.contains("hidden")) {
-      colorDivContainer.classList.add("hidden");
+    if (!colorDivContainer[0].classList.contains("hidden")) {
+      colorDivContainer[0].classList.add("hidden");
     }
   } else {
     if (!msgDiv[0].classList.contains("hidden")) {
@@ -41,8 +41,8 @@ getScheme.addEventListener("click", function () {
       msgDiv[1].classList.add("hidden");
     }
 
-    if (colorDivContainer.classList.contains("hidden")) {
-      colorDivContainer.classList.remove("hidden");
+    if (colorDivContainer[0].classList.contains("hidden")) {
+      colorDivContainer[0].classList.remove("hidden");
     }
 
     fetch(`https://www.thecolorapi.com/scheme?mode=${mode}&hex=${colorHex}`)
