@@ -2,7 +2,6 @@ const colorPicker = document.getElementById("colorPicker");
 const modePicker = document.getElementById("modePicker");
 const getScheme = document.getElementById("getScheme");
 const msgDiv = document.getElementsByClassName("msgDiv");
-const main = document.getElementsByTagName("main");
 var colorHex = colorPicker.value.replace("#", "");
 var mode = "";
 console.log(colorHex);
@@ -28,8 +27,6 @@ getScheme.addEventListener("click", function () {
     if (msgDiv.classList.contains("hidden")) {
       msgDiv.classList.remove("hidden");
     }
-
-    main.textContent = `No mode selected`;
   } else {
     if (!msgDiv.classList.contains("hidden")) {
       msgDiv.classList.add("hidden");
