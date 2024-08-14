@@ -29,7 +29,7 @@ getScheme.addEventListener("click", function () {
       msgDiv.classList.remove("hidden");
     }
 
-    main.innerHtml = `<p>No mode selected</p>`;
+    main.textContent = `No mode selected`;
   } else {
     if (!msgDiv.classList.contains("hidden")) {
       msgDiv.classList.add("hidden");
