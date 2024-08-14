@@ -24,7 +24,7 @@ getScheme.addEventListener("click", function () {
   console.log(mode);
 
   if (mode === "") {
-    msgDiv.classList.remove("msgDiv");
+    msgDiv.classList.remove("hidden");
     console.log("Please select a mode");
   } else {
     fetch(`https://www.thecolorapi.com/scheme?mode=${mode}&hex=${colorHex}`)
