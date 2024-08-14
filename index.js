@@ -28,10 +28,12 @@ getScheme.addEventListener("click", function () {
   if (mode === "") {
     if (msgDiv[0].classList.contains("hidden")) {
       msgDiv[0].classList.remove("hidden");
+      msgDiv[1].classList.remove("hidden");
     }
   } else {
-    if (!msgDiv.classList.contains("hidden")) {
-      msgDiv.classList.add("hidden");
+    if (!msgDiv[0].classList.contains("hidden")) {
+      msgDiv[0].classList.add("hidden");
+      msgDiv[1].classList.add("hidden");
     }
 
     fetch(`https://www.thecolorapi.com/scheme?mode=${mode}&hex=${colorHex}`)
