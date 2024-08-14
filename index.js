@@ -1,6 +1,7 @@
 const colorPicker = document.getElementById("colorPicker");
 const modePicker = document.getElementById("modePicker");
 const getScheme = document.getElementById("getScheme");
+const msgDiv = document.getElementById("msgDiv");
 var colorHex = colorPicker.value.replace("#", "");
 var mode = "";
 console.log(colorHex);
@@ -23,6 +24,7 @@ getScheme.addEventListener("click", function () {
   console.log(mode);
 
   if (mode === "") {
+    msgDiv.classList.remove("msgDiv");
     console.log("Please select a mode");
   } else {
     fetch(`https://www.thecolorapi.com/scheme?mode=${mode}&hex=${colorHex}`)
