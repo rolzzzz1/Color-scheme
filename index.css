@@ -43,7 +43,15 @@ body {
   display: flex;
 }
 
-footer {
+/* footer {
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+} */
+
+.colorTextContainer {
   min-height: 50px;
   /* margin: 10px 0; */
   display: flex;
