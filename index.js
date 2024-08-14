@@ -2,6 +2,7 @@ const colorPicker = document.getElementById("colorPicker");
 const modePicker = document.getElementById("modePicker");
 const getScheme = document.getElementById("getScheme");
 const msgDiv = document.getElementsByClassName("msgDiv");
+const colorDivContainer = document.getElementsByClassName("colorDivContainer");
 var colorHex = colorPicker.value.replace("#", "");
 var mode = "";
 console.log(colorHex);
@@ -29,11 +30,13 @@ getScheme.addEventListener("click", function () {
     if (msgDiv[0].classList.contains("hidden")) {
       msgDiv[0].classList.remove("hidden");
       msgDiv[1].classList.remove("hidden");
+      colorDivContainer.classList.add("hidden");
     }
   } else {
     if (!msgDiv[0].classList.contains("hidden")) {
       msgDiv[0].classList.add("hidden");
       msgDiv[1].classList.add("hidden");
+      colorDivContainer.classList.remove("hidden");
     }
 
     fetch(`https://www.thecolorapi.com/scheme?mode=${mode}&hex=${colorHex}`)
