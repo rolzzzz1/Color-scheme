@@ -32,7 +32,12 @@ body {
   font-weight: 500;
 }
 
-main {
+/* main {
+  min-height: 300px;
+  display: flex;
+} */
+
+.colorDivContainer {
   min-height: 300px;
   display: flex;
 }
