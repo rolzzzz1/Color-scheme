@@ -30,12 +30,18 @@ getScheme.addEventListener("click", function () {
     if (msgDiv[0].classList.contains("hidden")) {
       msgDiv[0].classList.remove("hidden");
       msgDiv[1].classList.remove("hidden");
+    }
+
+    if (!colorDivContainer.classList.contains("hidden")) {
       colorDivContainer.classList.add("hidden");
     }
   } else {
     if (!msgDiv[0].classList.contains("hidden")) {
       msgDiv[0].classList.add("hidden");
       msgDiv[1].classList.add("hidden");
+    }
+
+    if (colorDivContainer.classList.contains("hidden")) {
       colorDivContainer.classList.remove("hidden");
     }
 
